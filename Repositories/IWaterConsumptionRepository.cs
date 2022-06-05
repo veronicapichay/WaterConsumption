@@ -6,7 +6,7 @@ using ConsumptionTracker.Models;
 
 namespace ConsumptionTracker.Repositories
 {
-    public interface IWaterRepository
+    public interface IWaterConsumptionRepository
     {
 
         // returns all data as a list    
