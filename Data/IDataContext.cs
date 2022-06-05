@@ -10,7 +10,7 @@ namespace ConsumptionTracker.Data
     public interface IDataContext
     {
         //creates db table directly 
-        DbSet<WaterUsage> Consumptions {get; set;}
+        DbSet<WaterConsumption> Consumptions {get; set;}
 
         //updates the table after every query
         int SaveChanges();

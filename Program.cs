@@ -1,19 +1,20 @@
 using ConsumptionTracker.Data;
 using Microsoft.EntityFrameworkCore;
-using ConsumptionTracker.Repositories;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//connection string config
+//connection string config to postgre db
 builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(
     builder.Configuration.GetConnectionString("DefaultConnection")
 ));
+
 //register services
 builder.Services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
 
 //register repository
-builder.Services.AddScoped<IWaterConsumptionRepository, WaterConsumptionRepository>();
+
 
 builder.Services.AddControllersWithViews();
 

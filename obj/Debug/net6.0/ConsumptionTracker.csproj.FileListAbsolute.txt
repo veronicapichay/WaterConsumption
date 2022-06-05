@@ -33,3 +33,4 @@ C:\Users\veron\OneDrive\Desktop\Projects\ConsumptionTracker\ConsumptionTracker\b
 C:\Users\veron\OneDrive\Desktop\Projects\ConsumptionTracker\ConsumptionTracker\bin\Debug\net6.0\Npgsql.dll
 C:\Users\veron\OneDrive\Desktop\Projects\ConsumptionTracker\ConsumptionTracker\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\veron\OneDrive\Desktop\Projects\ConsumptionTracker\ConsumptionTracker\obj\Debug\net6.0\ConsumptionTracker.csproj.CopyComplete
+C:\Users\veron\OneDrive\Desktop\Projects\ConsumptionTracker\ConsumptionTracker\bin\Debug\net6.0\Newtonsoft.Json.dll

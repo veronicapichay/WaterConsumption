@@ -21,7 +21,7 @@ namespace ConsumptionTracker.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("ConsumptionTracker.Models.WaterUsage", b =>
+            modelBuilder.Entity("ConsumptionTracker.Models.WaterConsumption", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()

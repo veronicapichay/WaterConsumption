@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ConsumptionTracker.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220604030952_InitialMigration")]
+    [Migration("20220605210147_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ namespace ConsumptionTracker.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("ConsumptionTracker.Models.WaterUsage", b =>
+            modelBuilder.Entity("ConsumptionTracker.Models.WaterConsumption", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()

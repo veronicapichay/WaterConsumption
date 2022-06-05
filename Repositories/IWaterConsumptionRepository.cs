@@ -6,13 +6,14 @@ using ConsumptionTracker.Models;
 
 namespace ConsumptionTracker.Repositories
 {
-    public interface IWaterConsumptionRepository
+    public interface IWaterRepository
     {
+
         // returns all data as a list    
-        Task<IEnumerable<WaterUsage>> GetAll();
+        Task<IEnumerable<WaterConsumption>> GetAll();
 
         //returns the top 10 highest consumers
-        Task<IEnumerable<WaterUsage>> GetTopConsumers();
+        Task<IEnumerable<WaterConsumption>> GetTopConsumers();
 
     }
 }

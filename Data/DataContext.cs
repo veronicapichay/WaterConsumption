@@ -19,7 +19,7 @@ namespace ConsumptionTracker.Data
 
         }
         
-        public DbSet<WaterUsage> Consumptions {get; set;}
+        public DbSet<WaterConsumption> Consumptions {get; set;}
 
 
 
