@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L4B+kRKl6A5smVWX6rbgQAcYk56QxzNUlKQrWA9WC3H16EMg9ttw0P5Df1dATkikDM9Bp+az6KVBLnF53ax56w==",
+  "dgSpecHash": "feh/TOVmIepTEjU03fCISOLYYMiXINTG+h3er58FocSn7PrFLBCpQhZfqHb6Vr//ovG/WPxHPw5IfwFiU49LWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\veron\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\veron\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\veron\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\veron\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\veron\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
     "C:\\Users\\veron\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.4\\npgsql.entityframeworkcore.postgresql.6.0.4.nupkg.sha512",
     "C:\\Users\\veron\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

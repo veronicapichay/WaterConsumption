@@ -1,6 +1,6 @@
 using ConsumptionTracker.Data;
 using Microsoft.EntityFrameworkCore;
-
+using ConsumptionTracker.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,10 @@ builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(
 ));
 //register services
 builder.Services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
+
+//register repository
+builder.Services.AddScoped<IWaterConsumptionRepository, WaterConsumptionRepository>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
