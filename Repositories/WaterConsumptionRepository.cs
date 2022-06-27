@@ -45,7 +45,7 @@ namespace ConsumptionTracker.Repositories
             {
                 Console.WriteLine("No Data");
 
-                var geoJSON = File.ReadAllText("C:\\DataGeo\\water_consumption.geojson");
+                var geoJSON = File.ReadAllText("C:\\DataGeo\\bayareacounties.geojson");
 
                 //converting to json object with the use of newton lib
                 dynamic jsonObj = JsonConvert.DeserializeObject(geoJSON);
