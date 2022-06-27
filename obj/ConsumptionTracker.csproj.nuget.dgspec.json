@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj": {}
+    "C:\\Users\\veron\\OneDrive\\Desktop\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj": {
+    "C:\\Users\\veron\\OneDrive\\Desktop\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
+        "projectUniqueName": "C:\\Users\\veron\\OneDrive\\Desktop\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
         "projectName": "ConsumptionTracker",
-        "projectPath": "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
+        "projectPath": "C:\\Users\\veron\\OneDrive\\Desktop\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
         "packagesPath": "C:\\Users\\veron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\obj\\",
+        "outputPath": "C:\\Users\\veron\\OneDrive\\Desktop\\ConsumptionTracker\\ConsumptionTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

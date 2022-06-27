@@ -28,7 +28,7 @@ namespace ConsumptionTracker.Repositories
         public async Task<IEnumerable<WaterConsumption>> GetTopConsumers()
         {
             var qty = _context.Consumptions
-                .OrderByDescending(avgKL => avgKL.averageMonthlyGal)
+                .OrderByDescending(avgGal => avgGal.averageMonthlyGal)
                 .Take(10)
                 .ToListAsync();
 
@@ -45,7 +45,7 @@ namespace ConsumptionTracker.Repositories
             {
                 Console.WriteLine("No Data");
 
-                var geoJSON = File.ReadAllText("C:\\Users\\veron\\OneDrive\\Desktop\\bayarea.geojson");
+                var geoJSON = File.ReadAllText("C:\\DataGeo\\water_consumption.geojson");
 
                 //converting to json object with the use of newton lib
                 dynamic jsonObj = JsonConvert.DeserializeObject(geoJSON);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "feh/TOVmIepTEjU03fCISOLYYMiXINTG+h3er58FocSn7PrFLBCpQhZfqHb6Vr//ovG/WPxHPw5IfwFiU49LWg==",
+  "dgSpecHash": "4b3DidDHNNkaodv3GY3fBwiKKC5Bs7LbtEi39udu2zTsGK/DzNIsZZtjI7vUwfSIZNxIeo9xfpT/BvLSiFCASA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\veron\\OneDrive\\Desktop\\Projects\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
+  "projectFilePath": "C:\\Users\\veron\\OneDrive\\Desktop\\ConsumptionTracker\\ConsumptionTracker\\ConsumptionTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\veron\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\veron\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
