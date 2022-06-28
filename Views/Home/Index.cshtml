@@ -1,8 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<!-- Leaflet CSS -->
 
+<!-- Import Leaflet CSS -->
 <link rel="stylesheet" href="~/app/leaflet/leaflet.css" />
 <style>
     #map {
@@ -14,12 +14,11 @@
         height: 100vh;
     }
 
-
     .legend,
     .temporal-legend {
         padding: 6px 10px;
         font: 14px/16px Arial, Helvetica, sans-serif;
-        background: rgba (0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 0.85);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         color: whitesmoke;
@@ -32,25 +31,25 @@
         font-weight: bold;
     }
 
+    .symbolsContainer {
+        float: left;
+        margin-left: 50px;
+    }
+
     .legendCircle {
-        border-radius: 50px;
+        border-radius: 50%;
         border: 1px solid #537898;
-        background: rgba (0, 128, 128. 0.5);
+        background: rgba(0, 128, 128, 0.5);
         display: inline-block;
     }
 
     .legendValue {
         position: absolute;
         right: 12px;
+        color: whitesmoke;
         font-size: 10pt;
         text-align: center;
-        color: whitesmoke;
         font-weight: bold;
-    }
-
-    .symbolsContainer {
-        float: left;
-        margin-left: 50px;
     }
 
     .info {
@@ -59,31 +58,33 @@
         padding: 6px 10px;
         font: 14px/16px Arial, Helvetica, sans-serif;
         background: rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         color: whitesmoke;
+
     }
 
     .info h5 {
         margin: 0 0 5px;
         color: #777;
         text-align: center;
-        color: whitesmoke font-weight: bold;
-
+        color: whitesmoke;
+        font-weight: bold;
     }
 
     .info #horBarChart {
         width: 100% !important;
         max-width: 800px;
+
     }
 
     .leaflet-control-layers {
-        float;
-        right;
+        float: right;
         top: 500px;
         right: 0;
         position: absolute;
-        background: rgba (0, 0, 0, 0.85);
-        box-shadow: 0 0 15px rgba (0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         color: whitesmoke;
     }
@@ -99,9 +100,28 @@
         float: left;
         margin-right: 8px;
         opacity: 0.7;
+
     }
 </style>
 
-<script src="~/app/jquery/dist/jquery.min.js}"></script>
-<script src="~/app/leaflet/leaflet.js}"></script>
-<script src="~/app/extscripts/js/Chart.js}"></script>
+<!-- Leaflet JS -->
+<script src="~/app/jquery/dist/jquery.min.js"></script>
+<script src="~/app/leaflet/leaflet.js"></script>
+<script src="~/app/extscripts/js/Chart.js"></script>
+
+<div id="map"></div>
+
+<script>
+
+    // Basemap urls
+    var osm_humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+
+
+    // Initialize the map
+    var map = L.map('map', {
+        layers: [osm_humanitarian] // Default basemap
+    }).setView([37.7884969, -122.3558473], 11);
+
+</script>
