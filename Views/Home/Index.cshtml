@@ -1,3 +1,60 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!-- Leaflet CSS -->
+
+<link rel="stylesheet" href="~/app/leaflet/leaflet.css" />
+<style>
+    #map {
+        height: calc(100vh - 0px) !important;
+    }
+
+    .leaflet-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .legend,
+    .temporal-legend {
+        padding: 6px 10px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: rgba (0, 0, 0, 0.85);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        color: whitesmoke;
+    }
+
+    #legendTitle {
+        text-align: center;
+        margin-bottom: 15px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+
+    .symbolsContainer {
+        float: left;
+        margin-left: 50px
+    }
+
+    .legendCircle {
+        border-radius: 50px;
+        border: 1px solid #537898;
+        background: rgba (0, 128, 128. 0.5);
+        display: inline-block;
+    }
+
+    .legendValue {
+        text-align: center;
+        margin-bottom: 15px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+
+    .symbolsContainer {
+        float: left;
+        margin-left: 50px;
+    }
+
+    .info #horBarChart {}
+</style>
