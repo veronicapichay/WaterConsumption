@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] -ConsumptionTracker</title>
+    <title>@ViewData["Title"] - ConsumptionTracker</title>
 
     <link rel="stylesheet" href="~/app/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/app/font-awesome/css/font-awesome.min.css">
@@ -21,21 +21,13 @@
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
-            <!-- Logo -->
-            <a class="logo" href="#" style="background: #211e2c;">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
+            <a class="logo" href="#" style="background: #031854;">
                 <span class="logo-mini"><b>W</b>W</span>
-                <!-- logo for regular state and mobile devices -->
                 <span class="logo-lg"><b style="color:blue">WATER</b>WATCH</span>
             </a>
-            <!-- Header Navbar: style can be found in header.less -->
-
         </header>
         <aside class="main-sidebar">
-            <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
-
-                <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">MAPS NAVIGATION</li>
                     <li class="treeview active">
@@ -52,24 +44,18 @@
                     </li>
                 </ul>
             </section>
-            <!-- /.sidebar -->
         </aside>
-        <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
 
             <!-- Main content -->
             <section class="content-fluid">
                 @RenderBody()
             </section>
-            <!-- /.content -->
         </div>
     </div>
-    <!-- END OF WRAPPER -->
 
     <!-- Scripts -->
     <script src="~/app/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button);
     </script>
