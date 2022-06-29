@@ -113,6 +113,9 @@
 
 <script>
 
+    //Url Endpoints
+    var dataUrl = "https://localhost:7015/waterconsumption/getall";
+
     //Basemap urls
     var osm_humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -134,7 +137,7 @@
     //Initialize the map and set it as default
     var map = L.map('map', {
         layers: [osm_humanitarian]
-    }).setView([37.7884969, -122.3558473], 11);
+    }).setView([37.76132799985912, -122.21567900228013], 9);
 
     //Initialize basemaps
     var baseLayers = {
@@ -148,17 +151,15 @@
     //Add the layers control passing basemaps 
     L.control.layers(baseLayers).addTo(map);
 
+    //From jquery lib - function that make api calls and reads json data into an object     
+    $.getJSON(dataUrl, function (data) {
+        $.each(data, function (i, item) {
+            // Convert the coordinates value to a javascript array
+            var conv_poly = JSON.parse(item.coordinates);
+            var poly = L.polygon(conv_poly).addTo(map);
 
-
-
-
-
-
-
-
-
-
-
+        });
+    });
 
 
 </script>
