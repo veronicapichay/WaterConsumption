@@ -15,10 +15,10 @@ namespace ConsumptionTracker.Migrations
                 {
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    city = table.Column<string>(type: "text", nullable: false),
-                    county = table.Column<string>(type: "text", nullable: false),
+                    city = table.Column<string>(type: "text", nullable: true),
+                    county = table.Column<string>(type: "text", nullable: true),
                     averageMonthlyGal = table.Column<int>(type: "integer", nullable: false),
-                    coordinates = table.Column<string>(type: "text", nullable: false)
+                    coordinates = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

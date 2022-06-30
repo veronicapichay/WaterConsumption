@@ -33,15 +33,12 @@ namespace ConsumptionTracker.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("city")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("coordinates")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("county")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("id");

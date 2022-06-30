@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ConsumptionTracker.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220605210147_InitialMigration")]
+    [Migration("20220630185852_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,15 +35,12 @@ namespace ConsumptionTracker.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("city")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("coordinates")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("county")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("id");
